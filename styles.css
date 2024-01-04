@@ -1,0 +1,79 @@
+*{
+    padding: 0%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: rgba(127, 255, 212, 0.815);
+}
+
+.container{
+    display: grid;
+    place-items: center;
+}
+
+.semáforo{
+    width: 130px;
+    height: 260px;
+    border-radius: 30px;
+    display: grid;
+    place-items: center;
+    background-color: gray;
+    border-right: 4px solid rgba(22, 6, 6, 0.753);
+    padding: 10px;
+}
+
+.luces {
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    background-color: rgb(0,0,0,0.3);
+    
+}
+
+.luces::after{
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border-right: 4px solid rgba(255, 255, 255, 0.753);
+    top:5%;
+}
+
+.stick {
+      width: 10px;
+      height: 260px;
+      background-color: gray;
+}
+
+.floor{
+    width: 400px;
+    height: 2.5px;
+    background-color: gray;
+    box-shadow: 0 0 15px;
+    
+}
+
+.red {
+    background-color: rgba(255, 0, 0, 0.904);
+    box-shadow: 0 0 10px;
+}
+
+.yellow {
+    background-color: rgba(255, 255, 0, 0.925);
+    box-shadow: 0 0 10px;
+}
+
+.green {
+    background-color: rgba(0, 128, 0, 0.911);
+    box-shadow: 0 0 10px;
+}
+
